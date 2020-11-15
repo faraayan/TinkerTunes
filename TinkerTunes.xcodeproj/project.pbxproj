@@ -9,13 +9,36 @@
 /* Begin PBXBuildFile section */
 		41A0766A2560987B00829ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A076692560987B00829ACA /* AppDelegate.swift */; };
 		41A0766C2560987B00829ACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0766B2560987B00829ACA /* SceneDelegate.swift */; };
-		41A0766E2560987B00829ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0766D2560987B00829ACA /* ViewController.swift */; };
+		41A0766E2560987B00829ACA /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0766D2560987B00829ACA /* DrawingViewController.swift */; };
 		41A076712560987B00829ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0766F2560987B00829ACA /* Main.storyboard */; };
 		41A076742560987B00829ACA /* TinkerTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41A076722560987B00829ACA /* TinkerTunes.xcdatamodeld */; };
 		41A076762560987F00829ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A076752560987F00829ACA /* Assets.xcassets */; };
 		41A076792560987F00829ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A076772560987F00829ACA /* LaunchScreen.storyboard */; };
 		41A076842560988000829ACA /* TinkerTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A076832560988000829ACA /* TinkerTunesTests.swift */; };
 		41A0768F2560988000829ACA /* TinkerTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0768E2560988000829ACA /* TinkerTunesUITests.swift */; };
+		41A076A12560A6F300829ACA /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A076A02560A6F300829ACA /* Canvas.swift */; };
+		41A076A32560A70500829ACA /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A076A22560A70500829ACA /* Line.swift */; };
+		41EE84952560EE54003014B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE84942560EE54003014B7 /* AVFoundation.framework */; };
+		41EE8497256102FF003014B7 /* bnote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE8496256102FF003014B7 /* bnote.mp3 */; };
+		41EE849925610308003014B7 /* anote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE849825610308003014B7 /* anote.mp3 */; };
+		41EE849D25610E87003014B7 /* cnote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE849C25610E87003014B7 /* cnote.mp3 */; };
+		41EE849F25610E8D003014B7 /* dnote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE849E25610E8D003014B7 /* dnote.mp3 */; };
+		41EE84A125610E9F003014B7 /* enote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84A025610E9F003014B7 /* enote.mp3 */; };
+		41EE84A325610EA7003014B7 /* fnote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84A225610EA7003014B7 /* fnote.mp3 */; };
+		41EE84A525610EAE003014B7 /* gnote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84A425610EAE003014B7 /* gnote.mp3 */; };
+		41EE84A725611B90003014B7 /* dguitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84A625611B8F003014B7 /* dguitar.mp3 */; };
+		41EE84A925611B95003014B7 /* eguitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84A825611B95003014B7 /* eguitar.mp3 */; };
+		41EE84AB25611BA2003014B7 /* aguitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84AA25611BA1003014B7 /* aguitar.mp3 */; };
+		41EE84AD25611BA6003014B7 /* gguitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84AC25611BA6003014B7 /* gguitar.mp3 */; };
+		41EE84AF25611BB3003014B7 /* bguitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84AE25611BB3003014B7 /* bguitar.mp3 */; };
+		41EE84B125611BB7003014B7 /* higheguitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84B025611BB7003014B7 /* higheguitar.mp3 */; };
+		41EE84B325611BD4003014B7 /* rightsnaredrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84B225611BD4003014B7 /* rightsnaredrum.mp3 */; };
+		41EE84B525611BD9003014B7 /* leftsnaredrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84B425611BD9003014B7 /* leftsnaredrum.mp3 */; };
+		41EE84B725611BE4003014B7 /* openrightdrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84B625611BE3003014B7 /* openrightdrum.mp3 */; };
+		41EE84B925611BE7003014B7 /* tom2drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84B825611BE7003014B7 /* tom2drum.mp3 */; };
+		41EE84BB25611BF1003014B7 /* tom1drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84BA25611BF1003014B7 /* tom1drum.mp3 */; };
+		41EE84BD25611BF7003014B7 /* belldrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84BC25611BF6003014B7 /* belldrum.mp3 */; };
+		41EE84BF25611BFB003014B7 /* hifootdrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41EE84BE25611BFA003014B7 /* hifootdrum.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +62,7 @@
 		41A076662560987B00829ACA /* TinkerTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkerTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A076692560987B00829ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A0766B2560987B00829ACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41A0766D2560987B00829ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41A0766D2560987B00829ACA /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		41A076702560987B00829ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41A076732560987B00829ACA /* TinkerTunes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TinkerTunes.xcdatamodel; sourceTree = "<group>"; };
 		41A076752560987F00829ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +74,29 @@
 		41A0768A2560988000829ACA /* TinkerTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkerTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A0768E2560988000829ACA /* TinkerTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkerTunesUITests.swift; sourceTree = "<group>"; };
 		41A076902560988000829ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A076A02560A6F300829ACA /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		41A076A22560A70500829ACA /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		41EE84942560EE54003014B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		41EE8496256102FF003014B7 /* bnote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bnote.mp3; path = ../../../../Downloads/bnote.mp3; sourceTree = "<group>"; };
+		41EE849825610308003014B7 /* anote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = anote.mp3; path = ../../../../Downloads/anote.mp3; sourceTree = "<group>"; };
+		41EE849C25610E87003014B7 /* cnote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cnote.mp3; path = ../../../../Downloads/cnote.mp3; sourceTree = "<group>"; };
+		41EE849E25610E8D003014B7 /* dnote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dnote.mp3; path = ../../../../Downloads/dnote.mp3; sourceTree = "<group>"; };
+		41EE84A025610E9F003014B7 /* enote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = enote.mp3; path = ../../../../Downloads/enote.mp3; sourceTree = "<group>"; };
+		41EE84A225610EA7003014B7 /* fnote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fnote.mp3; path = ../../../../Downloads/fnote.mp3; sourceTree = "<group>"; };
+		41EE84A425610EAE003014B7 /* gnote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gnote.mp3; path = ../../../../Downloads/gnote.mp3; sourceTree = "<group>"; };
+		41EE84A625611B8F003014B7 /* dguitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dguitar.mp3; path = ../../../../Downloads/dguitar.mp3; sourceTree = "<group>"; };
+		41EE84A825611B95003014B7 /* eguitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = eguitar.mp3; path = ../../../../Downloads/eguitar.mp3; sourceTree = "<group>"; };
+		41EE84AA25611BA1003014B7 /* aguitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = aguitar.mp3; path = ../../../../Downloads/aguitar.mp3; sourceTree = "<group>"; };
+		41EE84AC25611BA6003014B7 /* gguitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gguitar.mp3; path = ../../../../Downloads/gguitar.mp3; sourceTree = "<group>"; };
+		41EE84AE25611BB3003014B7 /* bguitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bguitar.mp3; path = ../../../../Downloads/bguitar.mp3; sourceTree = "<group>"; };
+		41EE84B025611BB7003014B7 /* higheguitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = higheguitar.mp3; path = ../../../../Downloads/higheguitar.mp3; sourceTree = "<group>"; };
+		41EE84B225611BD4003014B7 /* rightsnaredrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rightsnaredrum.mp3; path = ../../../../Downloads/rightsnaredrum.mp3; sourceTree = "<group>"; };
+		41EE84B425611BD9003014B7 /* leftsnaredrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = leftsnaredrum.mp3; path = ../../../../Downloads/leftsnaredrum.mp3; sourceTree = "<group>"; };
+		41EE84B625611BE3003014B7 /* openrightdrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = openrightdrum.mp3; path = ../../../../Downloads/openrightdrum.mp3; sourceTree = "<group>"; };
+		41EE84B825611BE7003014B7 /* tom2drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tom2drum.mp3; path = ../../../../Downloads/tom2drum.mp3; sourceTree = "<group>"; };
+		41EE84BA25611BF1003014B7 /* tom1drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tom1drum.mp3; path = ../../../../Downloads/tom1drum.mp3; sourceTree = "<group>"; };
+		41EE84BC25611BF6003014B7 /* belldrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = belldrum.mp3; path = ../../../../Downloads/belldrum.mp3; sourceTree = "<group>"; };
+		41EE84BE25611BFA003014B7 /* hifootdrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hifootdrum.mp3; path = ../../../../Downloads/hifootdrum.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EE84952560EE54003014B7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +132,7 @@
 				41A076822560988000829ACA /* TinkerTunesTests */,
 				41A0768D2560988000829ACA /* TinkerTunesUITests */,
 				41A076672560987B00829ACA /* Products */,
+				41EE84932560EE54003014B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +149,33 @@
 		41A076682560987B00829ACA /* TinkerTunes */ = {
 			isa = PBXGroup;
 			children = (
+				41A0769F2560A6CF00829ACA /* Views */,
+				41A0769E2560A6C800829ACA /* Controller */,
+				41A0769C2560A6AD00829ACA /* Models */,
 				41A076692560987B00829ACA /* AppDelegate.swift */,
 				41A0766B2560987B00829ACA /* SceneDelegate.swift */,
-				41A0766D2560987B00829ACA /* ViewController.swift */,
 				41A0766F2560987B00829ACA /* Main.storyboard */,
 				41A076752560987F00829ACA /* Assets.xcassets */,
+				41EE84A625611B8F003014B7 /* dguitar.mp3 */,
+				41EE84A825611B95003014B7 /* eguitar.mp3 */,
+				41EE84AE25611BB3003014B7 /* bguitar.mp3 */,
+				41EE84AA25611BA1003014B7 /* aguitar.mp3 */,
+				41EE84AC25611BA6003014B7 /* gguitar.mp3 */,
+				41EE84B025611BB7003014B7 /* higheguitar.mp3 */,
+				41EE84BA25611BF1003014B7 /* tom1drum.mp3 */,
+				41EE84B425611BD9003014B7 /* leftsnaredrum.mp3 */,
+				41EE84BC25611BF6003014B7 /* belldrum.mp3 */,
+				41EE84B625611BE3003014B7 /* openrightdrum.mp3 */,
+				41EE84BE25611BFA003014B7 /* hifootdrum.mp3 */,
+				41EE84B225611BD4003014B7 /* rightsnaredrum.mp3 */,
+				41EE84B825611BE7003014B7 /* tom2drum.mp3 */,
+				41EE8496256102FF003014B7 /* bnote.mp3 */,
+				41EE849C25610E87003014B7 /* cnote.mp3 */,
+				41EE84A025610E9F003014B7 /* enote.mp3 */,
+				41EE849E25610E8D003014B7 /* dnote.mp3 */,
+				41EE84A225610EA7003014B7 /* fnote.mp3 */,
+				41EE84A425610EAE003014B7 /* gnote.mp3 */,
+				41EE849825610308003014B7 /* anote.mp3 */,
 				41A076772560987F00829ACA /* LaunchScreen.storyboard */,
 				41A0767A2560987F00829ACA /* Info.plist */,
 				41A076722560987B00829ACA /* TinkerTunes.xcdatamodeld */,
@@ -129,6 +199,38 @@
 				41A076902560988000829ACA /* Info.plist */,
 			);
 			path = TinkerTunesUITests;
+			sourceTree = "<group>";
+		};
+		41A0769C2560A6AD00829ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41A076A22560A70500829ACA /* Line.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41A0769E2560A6C800829ACA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41A0766D2560987B00829ACA /* DrawingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41A0769F2560A6CF00829ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41A076A02560A6F300829ACA /* Canvas.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41EE84932560EE54003014B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41EE84942560EE54003014B7 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +337,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EE84B925611BE7003014B7 /* tom2drum.mp3 in Resources */,
+				41EE84B725611BE4003014B7 /* openrightdrum.mp3 in Resources */,
+				41EE84A925611B95003014B7 /* eguitar.mp3 in Resources */,
 				41A076792560987F00829ACA /* LaunchScreen.storyboard in Resources */,
+				41EE849F25610E8D003014B7 /* dnote.mp3 in Resources */,
+				41EE84BD25611BF7003014B7 /* belldrum.mp3 in Resources */,
+				41EE84A725611B90003014B7 /* dguitar.mp3 in Resources */,
+				41EE84A325610EA7003014B7 /* fnote.mp3 in Resources */,
+				41EE84B325611BD4003014B7 /* rightsnaredrum.mp3 in Resources */,
+				41EE84A525610EAE003014B7 /* gnote.mp3 in Resources */,
+				41EE84BB25611BF1003014B7 /* tom1drum.mp3 in Resources */,
+				41EE84AD25611BA6003014B7 /* gguitar.mp3 in Resources */,
+				41EE8497256102FF003014B7 /* bnote.mp3 in Resources */,
+				41EE84B525611BD9003014B7 /* leftsnaredrum.mp3 in Resources */,
+				41EE84B125611BB7003014B7 /* higheguitar.mp3 in Resources */,
+				41EE84A125610E9F003014B7 /* enote.mp3 in Resources */,
+				41EE84AB25611BA2003014B7 /* aguitar.mp3 in Resources */,
+				41EE849925610308003014B7 /* anote.mp3 in Resources */,
+				41EE84AF25611BB3003014B7 /* bguitar.mp3 in Resources */,
 				41A076762560987F00829ACA /* Assets.xcassets in Resources */,
 				41A076712560987B00829ACA /* Main.storyboard in Resources */,
+				41EE84BF25611BFB003014B7 /* hifootdrum.mp3 in Resources */,
+				41EE849D25610E87003014B7 /* cnote.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +385,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A076742560987B00829ACA /* TinkerTunes.xcdatamodeld in Sources */,
-				41A0766E2560987B00829ACA /* ViewController.swift in Sources */,
+				41A0766E2560987B00829ACA /* DrawingViewController.swift in Sources */,
 				41A0766A2560987B00829ACA /* AppDelegate.swift in Sources */,
+				41A076A32560A70500829ACA /* Line.swift in Sources */,
+				41A076A12560A6F300829ACA /* Canvas.swift in Sources */,
 				41A0766C2560987B00829ACA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
